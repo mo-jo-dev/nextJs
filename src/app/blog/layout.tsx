@@ -1,4 +1,5 @@
-import React from "react";
+// "use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
 
 export default function BlogLayout({
@@ -6,9 +7,14 @@ export default function BlogLayout({
   }: Readonly<{
     children: React.ReactNode;
   }>) {
+
+    // useEffect(() => {
+    //   console.log("Blog layout mounted");
+    // }, []);
+
     return (
         <div>
-            BlogLayout
+            BlogLayout  
             <Link href="/">
                 Click to go to Home Page
             </Link>
